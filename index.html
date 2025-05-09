@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es" data-bs-theme="dark">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -24,46 +24,59 @@
   </head>
   <body>
     <header></header>
-    <main>
+    <main class="bg-warning-subtle">
       <section class="container my-5">
         <article class="text-center my-5">
-          <h1 class="col-12 text-light">Que tienes que hacer?</h1>
+          <h1 class="col-12">¡Prueba el cronómetro!</h1>
         </article>
         <div class="row justify-content-center my-3">
           <article class="col-12 col-md-6 mb-3">
             <div class="card shadow h-100 w-100">
               <div class="card-body text-center">
-                <i class="bi bi-calendar fs-1"></i>
-                <h3 class="card-title">Agrega aqui las tareas a realizar</h3>
+                <i class="bi bi-stopwatch fs-1"></i>
+                <h3 class="card-title">
+                  Cuantos segundos quieres que dure el contador? (max 200s)
+                </h3>
+                <!-- Aqui va el contador -->
                 <form class="row justify-content-center">
-                  <div class="my-3">
-                    <textarea
-                      id="consulta"
-                      rows="3"
-                      placeholder="Ej: Lavar los platos"
-                      minlength="2"
-                      maxlength="100"
+                  <div class="my-4 col-12 w-75">
+                    <input
+                      type="number"
+                      id="number"
+                      class="form-control"
+                      minlength="1"
+                      maxlength="3"
+                      min="1"
+                      max="200"
                       required
-                      class="form-control border border-dark-subtle textAreaNone"
-                    ></textarea>
+                    />
                   </div>
                   <div class="row justify-content-between">
-                    <div class="col-12 col-md-6">
+                    <div class="col-12 col-lg-4">
                       <button
-                        class="btn btn-primary w-100 col-12 border border-light-subtle my-2"
+                        class="btn btn-primary w-100 col-12 border border-light-subtle my-2 bg-success"
                         type="submit"
                       >
-                        <i class="bi bi-upload"></i>
-                        Cargar tarea
+                        <i class="bi bi-play-fill"></i>
+                        Iniciar
                       </button>
                     </div>
-                    <div class="col-12 col-md-6">
+                    <div class="col-12 col-md-6 col-lg-4">
+                      <button
+                        class="btn btn-primary w-100 col-12 border border-light-subtle my-2"
+                        type="button"
+                      >
+                        <i class="bi bi-pause"></i>
+                        Pausar
+                      </button>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
                       <button
                         class="btn btn-danger w-100 col-12 border border-light-subtle my-2"
                         type="button"
                       >
-                        <i class="bi bi-trash"></i>
-                        Borrar tarea
+                        <i class="bi bi-skip-backward-fill"></i>
+                        Reset
                       </button>
                     </div>
                   </div>
