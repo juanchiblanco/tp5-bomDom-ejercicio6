@@ -27,22 +27,22 @@
     <main class="bg-warning-subtle">
       <section class="container my-5">
         <article class="text-center my-5">
-          <h1 class="col-12">¡Prueba el cronómetro!</h1>
+          <h1 class="col-12">¡Prueba el temporizador!</h1>
         </article>
         <div class="row justify-content-center my-3">
           <article class="col-12 col-md-6 mb-3">
             <div class="card shadow h-100 w-100">
               <div class="card-body text-center">
                 <i class="bi bi-stopwatch fs-1"></i>
-                <h3 class="card-title">
+                <h2 class="card-title lead">
                   Cuantos segundos quieres que dure el contador? (max 200s)
-                </h3>
-                <!-- Aqui va el contador -->
-                <form class="row justify-content-center">
+                </h2>
+                <p class="text-center display-4">00:00</p>
+                <div class="row justify-content-center">
                   <div class="my-4 col-12 w-75">
                     <input
                       type="number"
-                      id="number"
+                      id="inputNumero"
                       class="form-control"
                       minlength="1"
                       maxlength="3"
@@ -54,8 +54,8 @@
                   <div class="row justify-content-between">
                     <div class="col-12 col-lg-4">
                       <button
-                        class="btn btn-primary w-100 col-12 border border-light-subtle my-2 bg-success"
-                        type="submit"
+                        class="btn btn-success w-100 col-12 border border-light-subtle my-2"
+                        type="button"
                       >
                         <i class="bi bi-play-fill"></i>
                         Iniciar
@@ -75,12 +75,12 @@
                         class="btn btn-danger w-100 col-12 border border-light-subtle my-2"
                         type="button"
                       >
-                        <i class="bi bi-skip-backward-fill"></i>
+                        <i class="bi bi-arrow-counterclockwise"></i>
                         Reset
                       </button>
                     </div>
                   </div>
-                </form>
+                </div>
               </div>
             </div>
           </article>
@@ -93,6 +93,6 @@
       integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
       crossorigin="anonymous"
     ></script>
-    <script src="./js/"></script>
+    <script src="./js/app.js"></script>
   </body>
 </html>
